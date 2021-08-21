@@ -1,0 +1,492 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* nav */
+nav {
+    background: white;
+    border-bottom: 2px solid hsl(117, 34%, 20%);
+    box-shadow: 0 0.15rem 0.5rem hsla(117, 34%, 0%, 0.5);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav a,
+nav .logo,
+.call {
+    color: hsl(117, 34%, 20%);
+    font-family: 'Quicksand';
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 300ms ease 10ms;
+}
+
+.bar {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: repeat(4, auto);
+    justify-self: start;
+}
+
+nav a {
+    align-self: center;
+    padding: 12px 10px;
+}
+
+nav a:hover {
+    background: hsl(117, 50%, 86%);
+    transition: all 200ms ease 10ms;
+}
+
+nav .logo {
+    align-items: center;
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: repeat(2, auto);
+    justify-self: center;
+}
+
+nav .logo .item {
+    font-family: 'Pacifico', cursive;
+    font-size: 120%;
+    font-weight: normal;
+    padding: 0 5px;
+}
+
+.call {
+    align-self: center;
+    color: white;
+    background:hsl(117, 34%, 20%);
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem hsla(117, 34%, 0%, 0.5);
+    grid-column: 3;
+    justify-self: end;
+    margin: 3px 10px 3px 0;
+    padding: 3px 10px;
+    transform: scale(1);
+    transition: all 300ms ease 10ms;
+    width: max-content;
+}
+
+.call:hover {
+    background:hsl(117, 34%, 30%);
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: all 200ms ease 10ms;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        font-size: 80%;
+    }
+
+    nav .logo {
+        display: none;
+    }
+}
+
+/* logo */
+header {
+    background: linear-gradient(to right, hsl(117, 34%, 50%), hsl(77, 54%, 60%));
+    color: white;
+    display: grid;
+    grid: 1fr / 200px 2fr;
+    justify-items: left;
+    line-height: 10px;
+    min-height: 17rem;
+    padding: 4rem 0 0 0;
+    text-align: left;
+    width: 100%;
+    z-index: -10;
+}
+
+header .logo {
+    position: fixed;
+    transition: all 200ms ease;
+}
+
+header .text {
+    position: fixed;
+    left: 12rem;
+    transition: all 200ms ease;
+}
+
+header .brand {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 500%;
+    padding: 18% 0 0 0;
+}
+
+header .tag {
+    font-family: 'Quicksand';
+    font-size: 180%;
+    padding: 18% 0 0 0;
+}
+
+@media screen and (max-width: 800px) {
+    header .logo{
+        transform: scale(0.75);
+        transition: all 200ms ease;
+    }
+
+    header .text {
+        transform: scale(0.75);
+        left: 8rem;
+        top: 5rem;
+        transition: all 200ms ease;
+    }
+}
+
+/* main */
+main {
+    background: white;
+    box-shadow: 0 -0.15rem 0.5rem hsla(117, 34%, 0%, 0.5);
+    display: grid;
+    font-family: 'Quicksand';
+    justify-items: center;
+    padding: 0 8vw 20% 8vw;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        padding: 0 4vw 40% 4vw;
+    }
+}
+
+/* heading */
+.heading {
+    color:hsl(117, 44%, 55%);
+    font-family: 'Pacifico', cursive;
+    font-size: 500%;
+    background: -webkit-linear-gradient(left, hsl(110, 38%, 52%), hsl(84, 50%, 58%));
+    padding: 6rem 0 4rem 0;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* menu */
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem hsla(117, 34%, 0%, 0.2);
+    color: white;
+    font-size: 200%;
+    margin: 1.5rem 0;
+    padding: 0 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.drinks .title {
+    background: linear-gradient(to right, hsl(117, 34%, 50%), hsl(97, 44%, 55%));
+}
+
+.toppings .title {
+    background: linear-gradient(to right, hsl(97, 44%, 55%), hsl(77, 54%, 60%));
+}
+
+.drinks,
+.toppings {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    padding: 1rem;
+    max-width: 50%;
+}
+
+.card {
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0.1rem 0.1rem 0.3rem hsla(117, 34%, 0%, 0.2);
+    color:hsl(117, 34%, 20%);
+    display: grid;
+    grid-template-columns: max-content max-content auto auto;
+    justify-items: start;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    transform: scale(1);
+    transition: all 300ms ease 10ms;
+    width: 100%;            
+}
+
+.card:hover {
+    transform: scale(0.95);
+    transition: all 200ms ease 10ms; 
+}
+
+input[type=radio],
+input[type=checkbox] {
+    transform: scale(2);
+}
+
+.box {
+    border-radius: 10px;
+    margin: 1rem;
+    max-width: 80px;
+    padding: 2rem;
+}
+
+/* drinks */
+.regular {
+    background: hsl(40, 100%, 85%); 
+}
+
+.taro {
+    background: hsl(300, 30%, 80%);
+}
+
+.thai {
+    background: hsl(30, 100%, 75%);
+}
+
+.oolong {
+    background: hsl(45, 90%, 85%);
+}
+
+.jasmine {
+    background: hsl(80, 40%, 85%);
+}
+
+.matcha {
+    background: hsl(100, 40%, 80%);
+}
+
+.peach {
+    background: hsl(40, 100%, 75%);
+}
+
+.mango {
+    background: hsl(50, 100%, 75%);
+}
+
+/* toppings */
+.black {
+    background: hsl(340, 20%, 30%);
+}
+
+.golden {
+    background: hsl(50, 100%, 70%);
+}
+
+.popping {
+    background: hsl(10, 100%, 70%);
+}
+
+.bean {
+    background: hsl(350, 30%, 50%);
+}
+
+.lychee {
+    background: hsl(40, 70%, 95%);
+}
+
+.grass {
+    background: hsl(110, 20%, 30%);
+}
+
+.passion {
+    background: hsl(45, 100%, 70%);
+}
+
+.toppings .mango {
+    background: hsl(50, 100%, 70%);
+}
+
+.name {
+    font-size: 120%;
+}
+
+.price {
+    font-size: 120%;
+    justify-self: end;
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .drinks .title,
+    .toppings .title {
+        background: linear-gradient(to right, hsl(117, 34%, 50%), hsl(77, 54%, 60%));
+    }
+
+    .drinks,
+    .toppings {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* options and order*/
+.options {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: flex;
+    justify-content: center;
+    justify-self: center;
+    padding: 1rem;
+    width: 60%;
+}
+
+.options .title,
+.order .title {
+    background: linear-gradient(to right, hsl(117, 34%, 50%), hsl(77, 54%, 60%));
+}
+
+.options .card:hover,
+.order .card:hover {
+    transform: scale(1);
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.options p {
+    color: hsl(117, 34%, 20%);
+    font-size: 150%;
+    text-align: center;
+}
+
+select {
+    color: hsl(117, 34%, 20%);
+    font-family: 'Quicksand';
+    font-size: 120%;
+}
+
+/* order */
+.order {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    justify-items: center;
+    padding: 1rem;
+    width: 60%;
+}
+
+.selected,
+.cart {
+    color: hsl(117, 34%, 20%);
+    display: grid;
+    justify-items: center;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.order .items {
+    display: grid;
+    grid-auto-rows: auto;
+    width: 100%;
+}
+
+.order .card {
+    grid-template-columns: auto auto;
+    margin: 1rem 0; 
+}
+
+.label {
+    font-size: 150%;
+}
+
+.order .pricing {
+    font-size: 120%;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: linear-gradient(to right, hsl(105, 43%, 54%), hsl(92, 45%, 56%));
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem hsla(117, 34%, 0%, 0.5);
+    color: white;
+    font-size: 150%;
+    margin-bottom: 1rem;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    transform: scale(1);
+    transition: all 300ms ease 10ms;
+    width: max-content;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, hsl(105, 43%, 44%), hsl(92, 45%, 46%));
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: all 200ms ease 10ms;
+}
+
+@media screen and (max-width: 1000px) {
+    .options,
+    .order {
+        width: 100%;
+    }
+}
+/* footer */
+footer {
+    background: hsl(117, 34%, 20%);
+    color: white;
+    font-family: 'Quicksand';
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+footer .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 140%;
+}
+
+.upper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section h4 {
+    font-size: 100%;
+}
+
+footer a{
+    color: hsl(110, 34%, 80%);
+    text-decoration: none;
+}
+
+.copyright {
+    color: white;
+    padding-top: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+    .upper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

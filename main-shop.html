@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link rel="stylesheet" href="main-styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FreshTea-online</title>
+    </head>
+    <body>
+        <nav>
+            <div class="bar">
+                <a href="main-shop.html">Home</a>
+                <a href="#reviews">Reviews</a>
+                <a href="menu.html">Menu</a>
+                <a href="#contact" >Contact</a>
+            </div>
+            <div class="logo">
+                <img class="item" src="images/logo-dark.png" width=30px>
+                <p class="item">FreshTea</p>
+            </div>
+            <p class="call">Call Us</p>
+        </nav>
+        <header>
+            <img class="logo" src="images/logo.png">
+            <div class="text">
+                <h1 class="brand">FreshTea</h1>
+                <h3 class="tag"><em>Tea made fresh.</em></h3>
+            </div>
+        </header>
+        <main>
+            <section class="welcome">
+                <p class="greet">Welcome to</p>
+                <h4 class="brand">FreshTea!</h4>
+                <p class="text">Tea made from the highest quality 
+                    ingredients sourced from local suppliers. Browse 
+                    our vast menu with all the delights you could
+                    imagine. Begin your tea escapade below by 
+                    ordering now.</p>
+                <a href="menu.html">Order Now</a>
+                </section>
+            <section class="location">
+                <p class="col">Find us here at <span>
+                    <a href="https://www.google.com/maps/@74.4,18.9,10.01z?hl=en" target="_blank">Bear Island</a>
+                </span></p>
+                <a class="map" href="https://www.google.com/maps/@74.4,18.9,10.01z?hl=en" target="_blank">
+                    <img class="col img" src="images/location.png" width=100% alt="Bear Island">
+                </a>
+            </section>
+            <section class="founding">
+                <h4 class="title row">The Founding of FreshTea</h4>
+                <figure class="row">
+                    <img class="img" src="images/founding.png" width=100% alt="Bubble Tea">
+                    <figcaption>A regular milk tea</figcaption>
+                </figure>
+                <p class="text row">FreshTea has a simple yet powerful 
+                    origin story. Founded by a group of brilliant graduates 
+                    from the University of Michigan, FreshTea is the 
+                    brainchild of Dr. Tea and Mr. Fresh. Beginning in 
+                    2015, they built the facility by hand and completed 
+                    construction 3 years later. Ever since completion, 
+                    FreshTea has been serving and giving back to the 
+                    community by hosting culture clubs and events.</p>
+            </section>
+            <section class="history">
+                <h4 class="title">The Origins of Bubble Tea</h4>
+                <figure>
+                    <img class="img" src="images/history.png" width=100% alt="More bubble tea">
+                    <figcaption>Milk tea with tapioca</figcaption>
+                </figure>
+                <p class="text">Sweet milk tea was a common 
+                    beverage in the 1980's in Taiwan and Taipei.
+                    Chewy tapioca balls or pearls were popular desserts
+                    during the same time period. Innovative food stall
+                    owners mixed the two elements to create a creamy sweet
+                    concoction of what is now known as boba tea! 
+                    Through the years, variations like fruit teas and 
+                    fruit jellies have also emerged. Boba nowadays 
+                    is a popular drink internationally.</p>
+                <a class="source" 
+                href="https://www.eater.com/2019/11/5/20942192/bubble-tea-boba-asian-american-diaspora" 
+                target="_blank">Source</a>
+            </section>
+            <section id="reviews" class="reviews">
+                <h4 class="title">Reviews</h4>
+                <div class="card">
+                    <div class="heading">
+                        <p class="name">Bobby Bobert</p>
+                        <img class="stars" src="images/star-5.png" width=100px>
+                        <p class="date">12/31/21</p>
+                    </div>
+                    <p class="text">I love this place! The regular milk 
+                        tea with golden boba is my favorite order. It 
+                        tastes so amazing.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="heading">
+                        <p class="name">Robby Robert</p>
+                        <img class="stars" src="images/star-4.png" width=100px>
+                        <p class="date">6/1/21</p>
+                    </div>
+                    <p class="text">FreshTea is truly an exquisite 
+                        experience. I would recommend trying out all 
+                        the drinks—you will not be disappointed. Wonderful 
+                        high quality drinks and toppings are served here.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="heading">
+                        <p class="name">Poppy Popert</p>
+                        <img class="stars" src="images/star-5.png" width=100px>
+                        <p class="date">1/31/21</p>
+                    </div>
+                    <p class="text">For anyone wondering, yes FreshTea 
+                        really is located on Bear Island. I have been a 
+                        regular customer since 2019 and I can attest to 
+                        the high caliber teas FreshTea serves! Not often 
+                        mentioned is the beautiful natural scenery.
+                    </p>
+                </div>
+                <div class="review-post" id="review-post">
+                    <div class="card">
+                        <div class="heading">
+                            <p class="name" id="name"></p>
+                            <div class="stars" id="review-rating"></div>
+                            <p class="date" id="date"></p>
+                        </div>
+                        <p class="text" id="text"></p>
+                    </div>
+                </div>
+                <div class="review-input" id="review-input">
+                    <p>Name: <input type="text" id="review-name"></p>
+                    <p>Rating: 
+                        <select name="rating" id="rating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                    <textarea cols="50" rows="10" id="review-text"></textarea>
+                </div>
+                <div class="add" id="add">
+                    <p onclick="postReview()">Post a Review</p>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+        </aside>
+        <footer id="contact">
+            <div class="upper">
+                <div class="logo">
+                    <img src="images/logo.png" width=40px>
+                    <p>FreshTea</p>
+                </div>
+                <div class="section">
+                    <h4>FreshTea</h4>
+                    <a href="mainShop.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+                <div class="section">
+                    <h4>Follow</h4>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </div>
+                <div class="section">
+                    <h4>Visit</h4>
+                    <a href="https://www.google.com/maps/@74.4,18.9,10.01z?hl=en" target="_blank">Bear Island</a>
+                </div>
+                <div class="section">
+                    <h4>Contact</h4>
+                    <a href="#contact">FreshTea@gmail.com</a>
+                    <a href="#contact">+1(888)-888-8888</a>
+                </div>
+                <div class="section">
+                    <h4>Legal</h4>
+                    <a href="#contact">Terms</a>
+                    <a href="#contact">Privacy</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© FreshTea Inc 2021. All rights reserved</p>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>
