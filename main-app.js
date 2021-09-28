@@ -1,7 +1,16 @@
+// ==================================
+// === js file for main-shop.hmtl ===
+// ==================================
+
+// call us button alert
+let callBtn = function () {
+    alert("Ring Ring Ring Ring");
+}
+
 // calls review posting functions
-function postReview() {
-    var nm = document.getElementById("review-name").value;
-    var t = document.getElementById("review-text").value;
+let postReview = function () {
+    let nm = document.getElementById("review-name").value;
+    let t = document.getElementById("review-text").value;
     // empty input error checking
     if (nm != "" && t != "") {
         document.getElementById("review-post").style.display = "block";
@@ -15,58 +24,53 @@ function postReview() {
 }
 
 // gets name of reviewer
-function getName() {
-    var nm = document.getElementById("review-name").value;
-    document.getElementById("name").innerHTML = nm;
+let getName = function () {
+    let nm = document.getElementById("review-name").value;
+    document.getElementById("name").textContent = nm;
     document.getElementById("review-name").value = "";
 }
 
 // gets current date in m / d / y
-function getCurrentDate() {
-    var date = new Date();
+let getCurrentDate = function () {
+    let date = new Date();
     y = date.getFullYear() - 2000;
     m = date.getMonth() + 1;
     d = date.getDate();
-    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    document.getElementById("date").textContent = m + "/" + d + "/" + y;
 }
 
 // gets rating
-function getRating() {
-    var rating = parseInt(document.getElementById("rating").value);
-    var img = new Image();
+let getRating = function () {
+    let rating = Number(document.getElementById("rating").value);
+    let img = new Image();
     img.width = 100;
     switch (rating) {
         case 1:
             img.src = "images/star-1.png";
-            console.log(img.width);
             document.getElementById("review-rating").appendChild(img);
             break;
         case 2:
             img.src = "images/star-2.png";
-            console.log(img.width);
             document.getElementById("review-rating").appendChild(img);
             break;
         case 3:
             img.src = "images/star-3.png";
-            console.log(img.width);
             document.getElementById("review-rating").appendChild(img);
             break;
         case 4:
             img.src = "images/star-4.png";
-            console.log(img.width);
             document.getElementById("review-rating").appendChild(img);
             break;
         case 5:
             img.src = "images/star-5.png";
-            console.log(img.width);
             document.getElementById("review-rating").appendChild(img);
             break;
     }
 }
 
 // gets review text
-function getReview() {
-    var t = document.getElementById("review-text").value;
-    document.getElementById("text").innerHTML = t;
+let getReview = function () {
+    let text = document.getElementById("review-text").value;
+    document.getElementById("text").textContent = text;
     document.getElementById("review-text").value = "";
 }

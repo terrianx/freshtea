@@ -1,3 +1,7 @@
+<!-- =============================== -->
+<!-- === html file for menu page === -->
+<!-- =============================== -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +16,7 @@
         <title>FreshTea-online-menu</title>
     </head>
     <body>
+        <!-- nav -->
         <nav>
             <div class="bar">
                 <a href="main-shop.html">Home</a>
@@ -23,8 +28,10 @@
                 <img class="item" src="images/logo-dark.png" width=30px>
                 <p class="item">Menu</p>
             </div>
-            <p class="call">Call Us</p>
+            <p class="call" onclick="callBtn()">Call Us</p>
         </nav>
+
+        <!-- header -->
         <header>
             <img class="logo" src="images/logo.png">
             <div class="text">
@@ -33,14 +40,18 @@
             </div>
         </header>
         <main>
+
+            <!-- title -->
             <section class="heading">
                 <h4 class="text">Menu</h4>
             </section>
+
             <section id="menu" class="menu">
+                <!-- drinks -->
                 <div class="drinks">
                     <h4 class="title">Drinks</h4>
                     <div class="card">
-                        <input id="regular" name="flavor" type="radio" value="regular">
+                        <input name="flavor" type="radio" value="Regular Milk Tea, 3.50" id="default-drink">
                         <p class="box regular"></p>
                         <div>
                             <p class="name">Regular Milk Tea</p>
@@ -50,7 +61,7 @@
                         <p class="price">3.50</p>
                     </div>
                     <div class="card">
-                        <input id="taro" name="flavor" type="radio" value="taro">
+                        <input name="flavor" type="radio" value="Taro Milk Tea, 3.50">
                         <p class="box taro"></p>
                             <div>
                                 <p class="name">Taro Milk Tea</p>
@@ -59,7 +70,7 @@
                             <p class="price">3.50</p>
                     </div>
                     <div class="card">
-                        <input id="thai" name="flavor" type="radio" value="thai">
+                        <input name="flavor" type="radio" value="Thai Milk Tea, 3.50">
                         <p class="box thai"></p>
                         <div>
                             <p class="name">Thai Milk Tea</p>
@@ -69,7 +80,7 @@
                         <p class="price">3.50</p>
                     </div>
                     <div class="card">
-                        <input id="oolong" name="flavor" type="radio" value="oolong">
+                        <input name="flavor" type="radio" value="Oolong Milk Tea, 3.75">
                         <p class="box oolong"></p>
                         <div>
                             <p class="name">Oolong Milk Tea</p>
@@ -79,7 +90,7 @@
                         <p class="price">3.75</p>
                     </div>
                     <div class="card">
-                        <input id="jasmine" name="flavor" type="radio" value="jasmine">
+                        <input name="flavor" type="radio" value="Jasmine Milk Tea, 3.75">
                         <p class="box jasmine"></p>
                         <div>
                             <p class="name">Jasmine Milk Tea</p>
@@ -89,7 +100,7 @@
                         <p class="price">3.75</p>
                     </div>
                     <div class="card">
-                        <input id="matcha" name="flavor" type="radio" value="matcha">
+                        <input name="flavor" type="radio" value="Matcha Milk Tea, 3.75">
                         <p class="box matcha"></p>
                         <div>
                             <p class="name">Matcha Milk Tea</p>
@@ -99,7 +110,7 @@
                         <p class="price">3.75</p>
                     </div>
                     <div class="card">
-                        <input id="peach" name="flavor" type="radio" value="peach">
+                        <input name="flavor" type="radio" value="Peach Fruit Tea, 3.25">
                         <p class="box peach"></p>
                         <div>
                             <p class="name">Peach Fruit Tea</p>
@@ -109,7 +120,7 @@
                         <p class="price">3.25</p>
                     </div>
                     <div class="card">
-                        <input id="mango" name="flavor" type="radio" value="mango">
+                        <input name="flavor" type="radio" value="Mango Fruit Tea, 3.25">
                         <p class="box mango"></p>
                         <div>
                             <p class="name">Mango Fruit Tea</p>
@@ -119,10 +130,12 @@
                         <p class="price">3.25</p>
                     </div>
                 </div>
+
+                <!-- toppings -->
                 <div class="toppings">
                     <h4 class="title">Toppings</h4>
                     <div class="card">
-                        <input id="black" name="top" type="checkbox" value="black">
+                        <input id="topping" name="top" type="checkbox" value="Black Pearls, 0.50">
                         <p class="box black"></p>
                         <div>
                             <p class="name">Black Pearls</p>
@@ -132,7 +145,7 @@
                         <p class="price">+0.50</p>
                     </div>
                     <div class="card">
-                        <input id="golden" name="top" type="checkbox" value="golden">
+                        <input id="topping" name="top" type="checkbox" value="Golden Pearls, 0.50">
                         <p class="box golden"></p>
                         <div>
                             <p class="name">Golden Pearls</p>
@@ -142,7 +155,7 @@
                         <p class="price">+0.50</p>
                     </div>
                     <div class="card">
-                        <input id="popping" name="top" type="checkbox" value="popping">
+                        <input id="topping" name="top" type="checkbox" value="Popping Pearls, 0.50">
                         <p class="box popping"></p>
                         <div>
                             <p class="name">Popping Pearls</p>
@@ -152,7 +165,7 @@
                         <p class="price">+0.50</p>
                     </div>
                     <div class="card">
-                        <input id="bean" name="top" type="checkbox" value="bean">
+                        <input id="topping" name="top" type="checkbox" value="Red Bean, 0.75">
                         <p class="box bean"></p>
                         <div>
                             <p class="name">Red Bean</p>
@@ -162,7 +175,7 @@
                         <p class="price">+0.75</p>
                     </div>
                     <div class="card">
-                        <input id="lychee" name="top" type="checkbox" value="lychee">
+                        <input id="topping" name="top" type="checkbox" value="Lychee Jelly, 0.75">
                         <p class="box lychee"></p>
                         <div>
                             <p class="name">Lychee Jelly</p>
@@ -172,7 +185,7 @@
                         <p class="price">+0.75</p>
                     </div>
                     <div class="card">
-                        <input id="grass" name="top" type="checkbox" value="grass">
+                        <input id="topping" name="top" type="checkbox" value="Grass Jelly, 0.75">
                         <p class="box grass"></p>
                         <div>
                             <p class="name">Grass Jelly</p>
@@ -181,7 +194,7 @@
                         <p class="price">+0.75</p>
                     </div>
                     <div class="card">
-                        <input id="passion" name="top" type="checkbox" value="passion">
+                        <input id="topping" name="top" type="checkbox" value="Passion Fruit Jelly, 0.75">
                         <p class="box passion"></p>
                         <div>
                             <p class="name">Passion Fruit Jelly</p>
@@ -191,7 +204,7 @@
                         <p class="price">+0.75</p>
                     </div>
                     <div class="card">
-                        <input id="mango" name="top" type="checkbox" value="mango">
+                        <input id="topping" name="top" type="checkbox" value="Mango Jelly, 0.75">
                         <p class="box mango"></p>
                         <div>
                             <p class="name">Mango Jelly</p>
@@ -202,102 +215,107 @@
                     </div>
                 </div>
             </section>
+
+            <!-- order options -->
             <section class="options">
                 <h4 class="title">Options</h4>
                 <div class="inputs card">
                     <div>
-                    <p>Ice</p>
-                    <select id="ice" name="ice">
-                        <option value="ice-125">125%</option>
-                        <option value="ice-100">100%</option>
-                        <option value="ice-75">75%</option>
-                        <option value="ice-50">50%</option>
-                        <option value="ice-25">25%</option>
-                        <option value="ice-0">0%</option>
-                    </select>
+                        <p>Ice</p>
+                        <select id="ice" name="ice">
+                            <option value="125">125%</option>
+                            <option value="100">100%</option>
+                            <option value="75">75%</option>
+                            <option value="50">50%</option>
+                            <option value="25">25%</option>
+                            <option value="0">0%</option>
+                        </select>
                     </div>
                     <div>
                         <p>Sugar</p>
                         <select id="sugar" name="sugar">
-                            <option value="sugar-125">125%</option>
-                            <option value="sugar-100">100%</option>
-                            <option value="sugar-75">75%</option>
-                            <option value="sugar-50">50%</option>
-                            <option value="sugar-25">25%</option>
-                            <option value="sugar-0">0%</option>
+                            <option value="125">125%</option>
+                            <option value="100">100%</option>
+                            <option value="75">75%</option>
+                            <option value="50">50%</option>
+                            <option value="25">25%</option>
+                            <option value="0">0%</option>
                         </select>
                     </div>
                     <div>
                         <p>Size</p>
                         <select id="size" name="size">
-                            <option value="reg">Regular</option>
-                            <option value="large">Large +0.50</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large +0.50</option>
                         </select>
                     </div>
                 </div>
             </section>
+
+            <!-- order information -->
             <section class="order">
                 <h4 class="title">Order</h4>
                 <div class="selected">
                     <p class="label">Selected</p>
-                    <p class="card">Regular Taro Milk Tea with Black Pearls 75% Ice 75% Sugar</p>
-                    <p class="pricing">Price: 4.00</p>
-                    <p class="btn">Add</p>
+                    <div class="card">
+                        <div>
+                            <p>Drink: <span id="selected-drink">Regular Milk Tea</span></p>
+                            <p>Toppings: <span id="selected-toppings">No Toppings</span></p>
+                            <p>Options: <span id="selected-options">125% Ice, 125% Sugar, Medium</span></p>
+                        </div>
+                        <p class="price" id="selected-price">3.50</p>
+                    </div>
+                    <p id="empty-drink"></p>
+                    <p class="btn" id="add" onclick="addCart()">Add</p>
                 </div>
                 <div class="cart">
                     <p class="label">Cart</p>
-                    <div class="items">
-                        <div class="card">
-                            <p class="text">Regular Jasmine Milk Tea with Golden Pearls 50% Ice 75% Sugar</p>
-                            <p class="price">4.25</p>
-                        </div>
-                        <div class="card">
-                            <p class="text">Large Peach Fruit Tea with Lychee Jelly 50% Ice 50% Sugar</p>
-                            <p class="price">4.50</p>
-                        </div>
-                    </div>
-                    <p class="pricing">Total Price: 8.75</p>
-                    <p class="btn">Clear</p>
-                    <p class="btn">Checkout</p>
+                    <div class="items"></div>
+                    <p class="pricing">Total Price: <span id="cart-price">0.00</span></p>
+                    <p class="btn" onclick="clearMenu()">Clear</p>
+                    <p class="btn" onclick="alertCheckout()">Checkout</p>
                 </div>
             </section>
         </main>
+
+        <!-- footer -->
+        <footer id="contact">
+            <div class="upper">
+                <div class="logo">
+                    <img src="images/logo.png" width=40px>
+                    <p>FreshTea</p>
+                </div>
+                <div class="section">
+                    <h4>FreshTea</h4>
+                    <a href="mainShop.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="#reviews">Reviews</a>
+                </div>
+                <div class="section">
+                    <h4>Follow</h4>
+                    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </div>
+                <div class="section">
+                    <h4>Visit</h4>
+                    <a href="https://www.google.com/maps/@74.4,18.9,10.01z?hl=en" target="_blank">Bear Island</a>
+                </div>
+                <div class="section">
+                    <h4>Contact</h4>
+                    <a href="#contact">FreshTea@gmail.com</a>
+                    <a href="#contact">+1(888)-888-8888</a>
+                </div>
+                <div class="section">
+                    <h4>Legal</h4>
+                    <a href="#contact">Terms</a>
+                    <a href="#contact">Privacy</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© FreshTea Inc 2021. All rights reserved</p>
+            </div>
+        </footer>
+        <script src="menu-app.js"></script>
     </body>
-    <footer id="contact">
-        <div class="upper">
-            <div class="logo">
-                <img src="images/logo.png" width=40px>
-                <p>FreshTea</p>
-            </div>
-            <div class="section">
-                <h4>FreshTea</h4>
-                <a href="mainShop.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="#reviews">Reviews</a>
-            </div>
-            <div class="section">
-                <h4>Follow</h4>
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <a href="https://twitter.com/" target="_blank">Twitter</a>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-            </div>
-            <div class="section">
-                <h4>Visit</h4>
-                <a href="https://www.google.com/maps/@74.4,18.9,10.01z?hl=en" target="_blank">Bear Island</a>
-            </div>
-            <div class="section">
-                <h4>Contact</h4>
-                <a href="#contact">FreshTea@gmail.com</a>
-                <a href="#contact">+1(888)-888-8888</a>
-            </div>
-            <div class="section">
-                <h4>Legal</h4>
-                <a href="#contact">Terms</a>
-                <a href="#contact">Privacy</a>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© FreshTea Inc 2021. All rights reserved</p>
-        </div>
-    </footer>
 </html>

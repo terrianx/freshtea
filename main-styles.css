@@ -1,3 +1,7 @@
+/* ===================================== */
+/* === style file for main-shop.hmtl === */
+/* ===================================== */
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -14,6 +18,7 @@ nav {
     box-shadow: 0 0.15rem 0.5rem hsla(117, 34%, 0%, 0.5);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 4rem;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -87,6 +92,7 @@ nav .logo .item {
 @media screen and (max-width: 800px) {
     nav {
         font-size: 80%;
+        padding: 0 1rem;
     }
 
     nav .logo {
@@ -103,7 +109,7 @@ header {
     justify-items: left;
     line-height: 10px;
     min-height: 17rem;
-    padding: 4rem 0 0 0;
+    padding: 4rem 0 0 4rem;
     text-align: left;
     width: 100%;
     z-index: -10;
@@ -111,13 +117,13 @@ header {
 
 header .logo {
     position: fixed;
-    transition: all 200ms ease
+    transition: all 200ms ease;
 }
 
 header .text {
     position: fixed;
-    left: 12rem;
-    transition: all 200ms ease
+    left: 16rem;
+    transition: all 200ms ease;
 }
 
 header .brand {
@@ -134,6 +140,10 @@ header .tag {
 }
 
 @media screen and (max-width: 800px) {
+    header {
+        padding-left: 0;
+    }
+    
     header .logo{
         transform: scale(0.75);
         transition: all 200ms ease;

@@ -1,3 +1,7 @@
+<!-- =============================== -->
+<!-- === html file for home page === -->
+<!-- =============================== -->
+
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -12,6 +16,7 @@
         <title>FreshTea-online</title>
     </head>
     <body>
+        <!-- nav -->
         <nav>
             <div class="bar">
                 <a href="main-shop.html">Home</a>
@@ -23,8 +28,10 @@
                 <img class="item" src="images/logo-dark.png" width=30px>
                 <p class="item">FreshTea</p>
             </div>
-            <p class="call">Call Us</p>
+            <p class="call" onclick="callBtn()">Call Us</p>
         </nav>
+
+        <!-- header -->
         <header>
             <img class="logo" src="images/logo.png">
             <div class="text">
@@ -32,7 +39,9 @@
                 <h3 class="tag"><em>Tea made fresh.</em></h3>
             </div>
         </header>
+
         <main>
+            <!-- welcome -->
             <section class="welcome">
                 <p class="greet">Welcome to</p>
                 <h4 class="brand">FreshTea!</h4>
@@ -42,7 +51,9 @@
                     imagine. Begin your tea escapade below by 
                     ordering now.</p>
                 <a href="menu.html">Order Now</a>
-                </section>
+            </section>
+
+            <!-- location -->
             <section class="location">
                 <p class="col">Find us here at <span>
                     <a href="https://www.google.com/maps/@74.4,18.9,10.01z?hl=en" target="_blank">Bear Island</a>
@@ -51,6 +62,8 @@
                     <img class="col img" src="images/location.png" width=100% alt="Bear Island">
                 </a>
             </section>
+
+            <!-- founding -->
             <section class="founding">
                 <h4 class="title row">The Founding of FreshTea</h4>
                 <figure class="row">
@@ -66,6 +79,8 @@
                     FreshTea has been serving and giving back to the 
                     community by hosting culture clubs and events.</p>
             </section>
+
+            <!-- history -->
             <section class="history">
                 <h4 class="title">The Origins of Bubble Tea</h4>
                 <figure>
@@ -85,6 +100,8 @@
                 href="https://www.eater.com/2019/11/5/20942192/bubble-tea-boba-asian-american-diaspora" 
                 target="_blank">Source</a>
             </section>
+
+            <!-- reviews -->
             <section id="reviews" class="reviews">
                 <h4 class="title">Reviews</h4>
                 <div class="card">
@@ -123,6 +140,8 @@
                         mentioned is the beautiful natural scenery.
                     </p>
                 </div>
+
+                <!-- reviews input and posting -->
                 <div class="review-post" id="review-post">
                     <div class="card">
                         <div class="heading">
@@ -151,11 +170,15 @@
                 </div>
             </section>
         </main>
+
+        <!-- social media sidebar -->
         <aside>
             <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
             <a href="https://twitter.com/" class="fa fa-twitter" target="_blank"></a>
             <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
         </aside>
+
+        <!-- footer -->
         <footer id="contact">
             <div class="upper">
                 <div class="logo">
@@ -193,6 +216,6 @@
                 <p>© FreshTea Inc 2021. All rights reserved</p>
             </div>
         </footer>
-        <script src="app.js"></script>
+        <script src="main-app.js"></script>
     </body>
 </html>
