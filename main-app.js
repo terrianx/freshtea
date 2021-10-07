@@ -1,5 +1,5 @@
 // ==================================
-// === js file for main-shop.hmtl ===
+// ===== js file for index.hmtl =====
 // ==================================
 
 // call us button alert
