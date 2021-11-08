@@ -8,6 +8,8 @@ Author: ytxpk
 
 Intro: A two page website for a mock boba tea shop
 
+Link: https://yu-xiao-boba-shop.netlify.app/index.html
+
 Background: A website created to practice HTML, CSS, and JS and learn new frontend skills. Began in July 2020 with HTML and CSS. Later in July 2021 I added JS to improve functionality and interactivity. 
 
 Features:
