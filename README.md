@@ -1,18 +1,24 @@
-#boba-website
+# FreshTea Website - [Link to Website](https://yu-xiao-boba-shop.netlify.app/)
+A website created to practice HTML, CSS, and JS and learn new frontend skills. I began in July 2020 with HTML and CSS. Later in July 2021 I added JS to improve functionality and interactivity. Hosted by [Netlify](https://www.netlify.com/).
 
-Project Status: active
+## What I Learned
+### 1. HTML
+ - Create forms and handle user input (buttons, text areas, etc)
+ - Display images
+ - Semantic HTML and website structure
+   - Navigation
+   - Main with sections and articles
+   - Footer
+ - Multi-page websites
+### 2. CSS
+ - Grid layout and positioning
+ - UI and UX design
+ - Responsiveness
+### 3. JS
+ - Document object model and accessing specific elements
+ - Creating a dynamic web page
 
-Name: FreshTea Website
-
-Author: ytxpk
-
-Intro: A two page website for a mock boba tea shop
-
-Link: https://yu-xiao-boba-shop.netlify.app/
-
-Background: A website created to practice HTML, CSS, and JS and learn new frontend skills. Began in July 2020 with HTML and CSS. Later in July 2021 I added JS to improve functionality and interactivity. 
-
-Features:
+## Features
  - Dynamic response to browser resizing
  - Customer review system
     - Add reviewer name and choose rating (out of 5 stars)
