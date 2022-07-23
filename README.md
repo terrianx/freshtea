@@ -1,4 +1,4 @@
-# FreshTea Website - [Link to Website](https://yu-xiao-boba-shop.netlify.app/)
+# FreshTea Website - [Link to Website](https://freshtea.netlify.app/)
 A website created to practice HTML, CSS, and JS and learn new frontend skills. I began with HTML and CSS to create a static page. Later I learned and added JS to improve functionality and interactivity. Hosted by [Netlify](https://www.netlify.com/).
 
 ## What I Learned
