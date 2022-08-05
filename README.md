@@ -34,6 +34,6 @@ A website created to practice HTML, CSS, and JS and learn new frontend skills. I
    - Displays list of all items in cart
    - User can clear or checkout
    - Note: checkout functionality does not request real payment (checkout button simply clears menu)
-   
+
 ---
-© Yu Xiao 2022. All rights reserved.  
+© Terrian Xiao 2022. All rights reserved.
